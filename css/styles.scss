@@ -1,0 +1,44 @@
+body {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.wrapperCard > .container {
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  background: hsla(0, 0%, 100%, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(83, 89, 179, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 30px;
+  & > .cardHeader {
+    width: 100%;
+  }
+  & > .card {
+    flex: 1 1 40ch;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  & :nth-child(2) {
+    flex: 1 1 82ch;
+  }
+  /* On mouse-over, add a deeper shadow */
+  & > .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  /* Add some padding inside the card container */
+  & > .card > .container {
+    padding: 2px 16px;
+  }
+}

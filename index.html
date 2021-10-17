@@ -4,29 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <div>
-      <h1>Welcome to BattleRolls <span id="playerName"></span></h1>
-    </div>
+    <div class="wrapperCard">
+      <div class="container">
+        <div class="cardHeader">
+          <h1>Welcome to BattleBowls Nilla</h1>
+        </div>
+        <div class="card">
+          <h2>Start a New Game</h2>
+          <div class="container">
+            <label for="nameInput">Your Name</label>
+            <input id="nameInput" type="text" />
+            <button id="startGame">Start</button>
+            <button id="attackBtn">Attack</button>
+          </div>
+        </div>
 
-    <div id="statsBox">
-      <label for="nameInput">Your Name</label>
-      <input id="nameInput" type="text" />
-      <button id="startGame">Start</button>
-      <h3>User Health: <span id="userHealth">0</span></h3>
-      <h3>User Damage: <span id="userDmg">0</span></h3>
-      <button id="attackBtn">Attack</button>
-    </div>
+        <div class="card">
+          <h2>Player Stats</h2>
+          <div class="container">
+            <h2>Player Name: <span id="playerName"></span></h2>
+            <h3>Player Health: <span id="userHealth">0</span></h3>
+            <h3>Player Attack Damage: <span id="userDmg">0</span></h3>
+          </div>
+        </div>
 
-    <div>
-      <h2>Your First Enocounter</h2>
-      <h2>Enemy Name: <span id="enemyName"></span></h2>
-      <h3>Enemy Health: <span id="enemyHealth">0</span></h3>
-      <h3>Enemy Damage: <span id="enemyDmg">0</span></h3>
+        <div class="card">
+          <h2>Enemy Stats</h2>
+          <div class="container">
+            <h2>Enemy Name: <span id="enemyName"></span></h2>
+            <h3>Enemy Health: <span id="enemyHealth">0</span></h3>
+            <h3>Enemy Attack Damage: <span id="enemyDmg">0</span></h3>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
