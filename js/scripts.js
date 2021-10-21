@@ -12,7 +12,7 @@ const playerDmgSpan = document.querySelector("#playerDmg");
 const enemyDmgSpan = document.querySelector("#enemyDmg");
 const enemiesDefeatedSpan = document.querySelector("#enemiesDefeated");
 const playerHealCountSpan = document.querySelector("#healCount");
-const gameLevelSpan = document.querySelector("#gameLevel")
+const gameLevelSpan = document.querySelector("#gameLevel");
 
 const enemyNames = ["Shriek", "Figueroa", "Fuzz", "Dankey", "PuddinSnoots"];
 const gameLevels = ["1", "2", "3", "4", "5"];
