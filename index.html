@@ -16,48 +16,57 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
-    <title>NuCamp: A Better Way To Camp</title>
+    <title>BattleBowls: Nilla</title>
   </head>
 
   <body>
-    <div class="wrapperCard">
-      <div class="container">
-        <div class="cardHeader">
-          <h1>Welcome to<br />BattleBowls Nilla</h1>
-        </div>
-        <div class="card">
-          <h2>Start a New Game</h2>
-          <p>Enter player name and click start to start a new game.</p>
-          <div class="container">
-            <label for="nameInput">Your Name</label>
-            <input id="nameInput" type="text" />
-            <button id="startGame">Start</button>
-            <button id="attackBtn">Attack</button>
-            <button id="healBtn">Heal</button>
-            <h2>Game Level: <span id="gameLevel"></span></h2>
-          </div>
+    <div class="card text-center">
+      <div class="card-header">Welcome to BattleBowls Nilla</div>
+      <div class="card-body">
+        <h2 class="card-title">Game Level: <span id="gameLevel">Click Start</span></h2>
+        <p class="card-text">Enter player name and click start to begin a new game.</p>
+        <div class="container">
+          <label for="nameInput">Your Name:</label>
+          <input id="nameInput" type="text" />
+          <button class="btn btn-primary" id="startGame">Start</button>
         </div>
 
-        <div class="card">
-          <h2>Player Stats</h2>
-          <div class="container">
-            <h2>Player Name: <span id="playerName"></span></h2>
-            <h3>Player Health: <span id="playerHealth">0</span></h3>
-            <h3>Remaining Heals: <span id="healCount">0</span></h3>
-            <h3>Player Attack Damage: <span id="playerDmg">0</span></h3>
-            <h3>Enemies Defeated: <span id="enemiesDefeated">0</span></h3>
-          </div>
-        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md mt-3">
+              <div class="card text-center">
+                <div class="card-header">Player Stats</div>
+                <div class="card-body">
+                  <h2 class="card-title">Player: <span id="playerName"></span></h2>
+                  <div class="card-text">
+                    <h5>Player Health: <span id="playerHealth">0</span></h5>
+                    <h5>Remaining Heals: <span id="healCount">0</span></h5>
+                    <h5>Player Attack Damage: <span id="playerDmg">0</span></h5>
+                    <h5>Enemies Defeated: <span id="enemiesDefeated">0</span></h5>
+                  </div>
+                  <button class="btn btn-primary" id="attackBtn">Attack</button>
+                  <button class="btn btn-primary" id="healBtn">Heal</button>
+                </div>
+              </div>
+            </div>
 
-        <div class="card">
-          <h2>Enemy Stats</h2>
-          <div class="container">
-            <h2>Enemy Name: <span id="enemyName"></span></h2>
-            <h3>Enemy Health: <span id="enemyHealth">0</span></h3>
-            <h3>Enemy Attack Damage: <span id="enemyDmg">0</span></h3>
+            <div class="col-md mt-3">
+              <div class="card text-center">
+                <div class="card-header">Enemy Stats</div>
+                <div class="card-body">
+                  <h2 class="card-title">Enemy: <span id="enemyName"></span></h2>
+                  <div class="card-text">
+                    <h5>Enemy Health: <span id="enemyHealth">0</span></h5>
+                    <h5>Enemy Attack Damage: <span id="enemyDmg">0</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="card-footer text-muted">Welcome to BattleBowls Nilla</div>
     </div>
 
     <!-- build:js js/main.js -->
@@ -65,7 +74,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="app.js"></script>
     <!-- endbuild -->
   </body>
 </html>

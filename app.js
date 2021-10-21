@@ -102,7 +102,7 @@ function playerAttack() {
       playerHealthSpan.innerText = player.health;
     }
 
-    // Why is the alert occurring before the spans are being updated?
+    // Why are the alerts occurring before the spans are being updated?
     if (enemy.health <= 0) {
       alert("You defeated an enemy!");
       player.level += 1;

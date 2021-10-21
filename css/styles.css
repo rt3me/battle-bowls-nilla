@@ -1,15 +1,18 @@
-body {
+/*body {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 50px; }
+  padding-top: 50px;
+  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(86%2c 183%2c 148%2c 1)'%3e%3c/rect%3e%3cpath d='M1010.4471551376428 481.7577396490565L1089.8038310855427 426.1915969430717 954.881012431658 402.4010637011565z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1052.8421134087296 127.08993761708975L988.988704538553 182.5968591122913 1044.4956260337544 246.45026798246792 1108.3490349039312 190.94334648726635z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1366.8906676573058-61.704049598379044L1302.0724148206898 55.231173932133586 1483.8258911878183 3.114203238236925z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M22.60101117789155 590.327118715832L89.14261322299922 433.97937224788893-58.57945805938968 449.50558758188623z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M722.813%2c513.936C760.335%2c513.132%2c795.549%2c495.233%2c814.649%2c462.926C834.092%2c430.037%2c835.68%2c388.854%2c816.184%2c355.997C797.057%2c323.761%2c760.295%2c307.931%2c722.813%2c308.152C685.748%2c308.37%2c650.919%2c325.62%2c631.327%2c357.085C610.521%2c390.5%2c604.068%2c433.01%2c623.9%2c467.012C643.606%2c500.798%2c683.709%2c514.774%2c722.813%2c513.936' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M306.32592044930084 435.6644879570372L164.85182194319967 481.63220906846385 210.81954305462634 623.106307574565 352.2936415607275 577.1385864631384z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M811.3589082866845 415.3124066697739L681.2778106536301 387.66281581862944 783.70931743554 545.3935043028282z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M683.213628244189 177.41992695234254L604.204527070501 128.0495611070017 554.8341612251602 207.05866228068965 633.8432623988481 256.4290281260305z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M615.8398109606052 442.10452985744297L540.203612723397 321.06131017304494 419.160393038999 396.6975084102531 494.79659127620715 517.7407280946511z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M58.207319971686566 207.53871437764948L167.6298099166931 236.85838219221668 196.9494777312603 127.43589224721015 87.52698778625376 98.11622443264295z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M434.70456286781103 347.30017357343024L612.0248618578539 366.1081620037409 551.1195185399599 222.6241648569724z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M562.3157421838196-66.64205828956776L554.24273100261 48.80738029961417 677.7651807730015-58.56904710835818z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M641.1473580713638 167.32513940426264L787.9935865321289 215.03837134868238 835.7068184765486 68.19214288791727 688.8605900157835 20.47891094349754z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M842.8387561371081-51.035761710005865L855.6884948590236 95.83742395830603 1002.5616805273355 82.98768523639052 989.71194180542-63.885500431921386z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1192.1067529220957 588.6608257388643L1321.4102207829037 556.4218503364316 1159.867777519663 459.35735787805623z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M879.52%2c460.077C921.614%2c459.742%2c959.136%2c435.155%2c980.049%2c398.622C1000.823%2c362.332%2c1001.411%2c318.465%2c981.69%2c281.593C960.733%2c242.41%2c923.956%2c210.621%2c879.52%2c210.665C835.146%2c210.709%2c798.936%2c242.833%2c777.698%2c281.795C757.443%2c318.954%2c755.193%2c363.493%2c776.182%2c400.243C797.339%2c437.288%2c836.86%2c460.416%2c879.52%2c460.077' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M360.72232082502387 460.62991127561935L340.81081235415417 521.9112330967406 442.6885493212709 521.1378348924845z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1311.767%2c206.706C1335.774%2c207.718%2c1364.451%2c208.54%2c1376.255%2c187.611C1387.968%2c166.844%2c1370.955%2c143.737%2c1358.879%2c123.179C1347.046%2c103.035%2c1335.077%2c79.393%2c1311.767%2c77.83C1286.566%2c76.141%2c1264.142%2c93.734%2c1252.279%2c116.033C1241.1%2c137.044%2c1243.002%2c162.643%2c1256.058%2c182.543C1267.959%2c200.682%2c1290.091%2c205.792%2c1311.767%2c206.706' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1053.661%2c372.974C1070.46%2c372.695%2c1085.987%2c363.694%2c1094.109%2c348.987C1101.978%2c334.738%2c1099.577%2c317.902%2c1092.042%2c303.474C1083.784%2c287.663%2c1071.467%2c272.607%2c1053.661%2c271.543C1034.288%2c270.385%2c1015.684%2c281.306%2c1006.416%2c298.358C997.51%2c314.743%2c1000.838%2c334.616%2c1010.814%2c350.372C1020.072%2c364.994%2c1036.356%2c373.262%2c1053.661%2c372.974' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M84.58454193148302 122.60446884126343L192.45718919450962 242.40918089933587 312.2619012525821 134.5365336363093 204.38925398955547 14.731821578236818z' fill='rgba(5%2c 63%2c 34%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
 
 h1 {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   text-transform: uppercase;
   font-size: 3em;
-  line-height: 1em; }
+  line-height: 1em;
+}
 
 .wrapperCard > .container {
   padding: 3%;
@@ -17,27 +20,34 @@ h1 {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1000px;
-  background: rgba(255, 255, 255, 0.95);
+  background: hsla(0, 0%, 100%, 0.95);
   box-shadow: 0 8px 32px 0 rgba(83, 89, 179, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 30px;
-  /* On mouse-over, add a deeper shadow */
-  /* Add some padding inside the card container */ }
-  .wrapperCard > .container > .cardHeader {
-    width: 100%; }
-  .wrapperCard > .container > .card {
+  & > .cardHeader {
+    width: 100%;
+  }
+  & > .card {
     flex: 1 1 40ch;
     margin: 0.5rem;
     padding: 1rem 0.5rem;
     text-align: center;
-    /* Add shadows to create the "card" effect */
+    // Add shadows to create the "card" effect
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    border-radius: 5px; }
-  .wrapperCard > .container :nth-child(2) {
-    flex: 1 1 82ch; }
-  .wrapperCard > .container > .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
-  .wrapperCard > .container > .card > .container {
-    padding: 2px 16px; }
+    border-radius: 5px;
+  }
+  & :nth-child(2) {
+    flex: 1 1 82ch;
+  }
+  // On mouse-over, add a deeper shadow
+  & > .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  // Add some padding inside the card container
+  & > .card > .container {
+    padding: 2px 16px;
+  }
+}
+*/

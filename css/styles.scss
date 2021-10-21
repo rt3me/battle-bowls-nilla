@@ -1,4 +1,4 @@
-body {
+/*body {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
@@ -33,7 +33,7 @@ h1 {
     margin: 0.5rem;
     padding: 1rem 0.5rem;
     text-align: center;
-    /* Add shadows to create the "card" effect */
+    // Add shadows to create the "card" effect
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
@@ -41,12 +41,13 @@ h1 {
   & :nth-child(2) {
     flex: 1 1 82ch;
   }
-  /* On mouse-over, add a deeper shadow */
+  // On mouse-over, add a deeper shadow
   & > .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
-  /* Add some padding inside the card container */
+  // Add some padding inside the card container
   & > .card > .container {
     padding: 2px 16px;
   }
 }
+*/
