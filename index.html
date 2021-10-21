@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+    <title>NuCamp: A Better Way To Camp</title>
   </head>
 
   <body>
     <div class="wrapperCard">
       <div class="container">
         <div class="cardHeader">
-          <h1>Welcome to BattleBowls Nilla</h1>
+          <h1>Welcome to<br />BattleBowls Nilla</h1>
         </div>
         <div class="card">
           <h2>Start a New Game</h2>
+          <p>Enter player name and click start to start a new game.</p>
           <div class="container">
             <label for="nameInput">Your Name</label>
             <input id="nameInput" type="text" />
             <button id="startGame">Start</button>
             <button id="attackBtn">Attack</button>
+            <button id="healBtn">Heal</button>
+            <h2>Game Level: <span id="gameLevel"></span></h2>
           </div>
         </div>
 
@@ -28,8 +42,10 @@
           <h2>Player Stats</h2>
           <div class="container">
             <h2>Player Name: <span id="playerName"></span></h2>
-            <h3>Player Health: <span id="userHealth">0</span></h3>
-            <h3>Player Attack Damage: <span id="userDmg">0</span></h3>
+            <h3>Player Health: <span id="playerHealth">0</span></h3>
+            <h3>Remaining Heals: <span id="healCount">0</span></h3>
+            <h3>Player Attack Damage: <span id="playerDmg">0</span></h3>
+            <h3>Enemies Defeated: <span id="enemiesDefeated">0</span></h3>
           </div>
         </div>
 
@@ -44,7 +60,12 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+    <!-- build:js js/main.js -->
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

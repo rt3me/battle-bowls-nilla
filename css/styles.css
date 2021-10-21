@@ -5,6 +5,12 @@ body {
   text-align: center;
   padding-top: 50px; }
 
+h1 {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1em; }
+
 .wrapperCard > .container {
   padding: 3%;
   display: flex;
