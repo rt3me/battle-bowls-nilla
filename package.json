@@ -35,6 +35,7 @@
     "font-awesome": "^4.7.0",
     "imagemin": "^8.0.1",
     "jquery": "^3.5.1",
+    "netlify-cli": "^6.14.0",
     "popper.js": "^1.16.1",
     "usemin": "^0.6.0"
   }
