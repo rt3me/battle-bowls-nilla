@@ -17,6 +17,23 @@ const gameLevelSpan = document.querySelector("#gameLevel");
 const enemyNames = ["Shriek", "Figueroa", "Fuzz", "Dankey", "PuddinSnoots"];
 const gameLevels = ["1", "2", "3", "4", "5"];
 
+class Enemy {
+  constructor(name, health, attackDmg) {
+    this.name = name;
+    this.health = health;
+    this.attackDmg = attackDmg;
+  }
+  initializeEnemy () {
+    // Create enemy with 10 health and random attack damage between 1 and 3
+    this.name = enemyNames[Math.floor(Math.random() * enemyNames.length)];
+    enemyNameSpan.innerText = this.name;
+    this.health = 10;
+    enemyHealthSpan.innerText = this.health;
+    this.attackDmg = Math.floor(Math.random() * 3) + 1; // Math.floor(Math.random() * (max - min + 1)) + min;
+    enemyDmgSpan.innerText = this.attackDmg;
+  }
+}
+
 class Player {
   constructor(name, health, attackDmg, healCount, enemiesDefeated) {
     this.name = name;
@@ -48,22 +65,6 @@ class Player {
     enemiesDefeatedSpan.innerText = this.enemiesDefeated;
     this.level = 1;
     gameLevelSpan.innerText = gameLevels[this.level - 1];
-  }
-}
-class Enemy {
-  constructor(name, health, attackDmg) {
-    this.name = name;
-    this.health = health;
-    this.attackDmg = attackDmg;
-  }
-  initializeEnemy () {
-    // Create enemy with 10 health and random attack damage between 1 and 3
-    this.name = enemyNames[Math.floor(Math.random() * enemyNames.length)];
-    enemyNameSpan.innerText = this.name;
-    this.health = 10;
-    enemyHealthSpan.innerText = this.health;
-    this.attackDmg = Math.floor(Math.random() * 3) + 1; // Math.floor(Math.random() * (max - min + 1)) + min;
-    enemyDmgSpan.innerText = this.attackDmg;
   }
 }
 
