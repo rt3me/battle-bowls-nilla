@@ -111,7 +111,7 @@ function playerAttack() {
       player.enemiesDefeated += 1;
       enemiesDefeatedSpan.innerText = player.enemiesDefeated;
       if (player.enemiesDefeated === 5) {
-        alert("Game over, you won!")
+        alert("Game over, you won!");
       } else {
         enemy.initializeEnemy();
       }
