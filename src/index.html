@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+    <title>BattleBowls: Nilla</title>
+  </head>
+
+  <body class="h-100">
+    <div class="card text-center h-100">
+      <div class="card-header">Welcome to BattleBowls Nilla</div>
+      <div class="card-body">
+        <h2 class="card-title">Game Level: <span id="gameLevel">Click Start</span></h2>
+        <p class="card-text">Enter player name and click start to begin a new game.<br />Defeat an enemy and level-up your attack damage.<br />Defeat 5 enemies to win the game!</p>
+        <div class="container">
+          <label for="nameInput">Your Name:</label>
+          <input id="nameInput" type="text" />
+          <button class="btn btn-primary" id="startGame">Start</button>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 mt-4">
+              <div class="card text-center h-100" id="playerCard">
+                <img src="https://www.fillmurray.com/300/200" id="playerAvatar" class="card-img-top" alt="What about Bob?" />
+                <div class="card-body">
+                  <h4 class="card-title">Player: <span id="playerName"></span></h4>
+                  <div class="card-text">
+                    <p>
+                      Player Health: <span id="playerHealth">0</span><br />
+                      Remaining Heals: <span id="healCount">0</span><br />
+                      Player Attack Damage: <span id="playerDmg">0</span><br />
+                      Enemies Defeated: <span id="enemiesDefeated">0</span>
+                    </p>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button class="btn btn-primary" id="attackBtn">Attack</button>
+                    <button class="btn btn-success" id="healBtn">Heal</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4">
+              <div class="card text-center h-100" id="enemyCard">
+                <img src="https://www.placecage.com/300/200" id="enemyAvatar" class="card-img-top" alt="Put the bunny back in the box!" />
+                <div class="card-body">
+                  <h4 class="card-title">Enemy: <span id="enemyName"></span></h4>
+                  <div class="card-text">
+                    <p>
+                      Enemy Health: <span id="enemyHealth">0</span><br />
+                      Enemy Attack Damage: <span id="enemyDmg">0</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer text-muted mt-3">Welcome to BattleBowls Nilla</div>
+    </div>
+
+    <!-- build:js js/main.js -->
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

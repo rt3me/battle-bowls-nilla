@@ -13,15 +13,18 @@ const enemyDmgSpan = document.querySelector("#enemyDmg");
 const enemiesDefeatedSpan = document.querySelector("#enemiesDefeated");
 const playerHealCountSpan = document.querySelector("#healCount");
 const gameLevelSpan = document.querySelector("#gameLevel");
-
+const enemyAvatarImg = document.querySelector("#enemyAvatar");
 const enemyNames = ["Shriek", "Figueroa", "Fuzz", "Dankey", "PuddinSnoots"];
 const gameLevels = ["1", "2", "3", "4", "5"];
+const playerAvatars = ["https://www.fillmurray.com/300/200", "https://www.placecage.com/300/200", "https://www.stevensegallery.com/300/200"];
+const playerAvatarImg = document.querySelector("#playerAvatar");
 
 class Enemy {
-  constructor(name, health, attackDmg) {
+  constructor(name, health, attackDmg, mood) {
     this.name = name;
     this.health = health;
     this.attackDmg = attackDmg;
+    this.mood = mood;
   }
   initializeEnemy () {
     // Create enemy with 10 health and random attack damage between 1 and 3
@@ -31,6 +34,8 @@ class Enemy {
     enemyHealthSpan.innerText = this.health;
     this.attackDmg = Math.floor(Math.random() * 3) + 1; // Math.floor(Math.random() * (max - min + 1)) + min;
     enemyDmgSpan.innerText = this.attackDmg;
+    const enemyAvatarURL = "https://avatars.dicebear.com/api/pixel-art-neutral/:" + this.name + ".svg";
+    enemyAvatarImg.src = enemyAvatarURL;
   }
 }
 
@@ -44,9 +49,9 @@ class Player {
   }
   healPlayer () {
     if (this.health > 0 && this.health < 10 && this.healCount > 0) {
-      this.healCount -= 1;
+      this.healCount--;
       playerHealCountSpan.innerText = this.healCount;
-      this.health += 1;
+      this.health++;
       playerHealthSpan.innerText = this.health;
     }
   }
@@ -65,6 +70,10 @@ class Player {
     enemiesDefeatedSpan.innerText = this.enemiesDefeated;
     this.level = 1;
     gameLevelSpan.innerText = gameLevels[this.level - 1];
+
+    // Set a random "hero" image as the avatar
+    console.log("Player avatar string is: ", playerAvatars[Math.floor(Math.random() * playerAvatars.length)]);
+    playerAvatarImg.src = playerAvatars[Math.floor(Math.random() * playerAvatars.length)];
   }
 }
 
@@ -74,6 +83,7 @@ const enemy = new Enemy(enemyNames[Math.floor(Math.random() * enemyNames.length)
 
 function startGame() {
   if (playerNameInput.value) {
+    console.log("Starting game...");
     player.initializePlayer();
     enemy.initializeEnemy();
   }
@@ -94,7 +104,7 @@ function playerAttack() {
     // Only allow return attack if game is not over
     if (player.health && enemy.health) {
       // Enemy returns attack
-      // If enemy health is zero or greater after attack, set it, otherwise set 0
+      // If player health is zero or greater after attack, set it, otherwise set 0
       if (player.health - enemy.attackDmg >= 0) {
         player.health -= enemy.attackDmg;
       } else {
@@ -106,9 +116,11 @@ function playerAttack() {
     // Why are the alerts occurring before the spans are being updated?
     if (enemy.health <= 0) {
       alert("You defeated an enemy!");
-      player.level += 1;
+      player.level++;
+      player.attackDmg++;
+      playerDmgSpan.innerText = player.attackDmg;
       gameLevelSpan.innerText = gameLevels[player.level - 1];
-      player.enemiesDefeated += 1;
+      player.enemiesDefeated++;
       enemiesDefeatedSpan.innerText = player.enemiesDefeated;
       if (player.enemiesDefeated === 5) {
         alert("Game over, you won!");
